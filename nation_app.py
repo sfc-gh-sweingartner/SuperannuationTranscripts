@@ -6,7 +6,7 @@ from snowflake.snowpark.context import get_active_session
 
 # Set page config
 st.set_page_config(
-    page_title="Nation Data Viewer",
+    page_title="Nation Viewer",
     page_icon="🌎",
     layout="wide"
 )

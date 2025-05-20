@@ -27,6 +27,7 @@ https://repo.anaconda.com/pkgs/snowflake/
 
 The app will have access to a Snowflake database but default the app will not have access to external data.  When needed, you can assist the developer to set up external network connections, API keys, etc... to connect to external information
 
+
 ## Detailed design
 1. The landing page has KPI's and easy navigation to... etc...  
 2. The monitoring page has a map...  
