@@ -3,15 +3,17 @@
 When you are done, then share this into the context of the AI Agent.  
 Also share any sample code or documentation that you want Cursor to copy paste solutions out of
 Then run this AI Agent command:  
-/Generate Curor Rules generate some rules using the requirements.md document I've provided
-That will generate several rules file.  Alter each of them with the drop down boxes to be "Always" included
-When you are done, delete this requirements.md document and alter your rules files going forward
+"/Generate Curor Rules generate some rules using the requirements.md document I've provided
+That will generate several rules file.  
+When you are done, we will delete this requirements.md document and only alter the rules files going forward"
+
+After this is done, accept all the files, mark all of them to be  "Always" included, review and edit each one as required.  Then delete your requiremenmt.md doc
 
 ## Cursor should ignore all the lines above when generating rules files.  
 
 ## Cursor behaviour
 1. If I issue you a challenging task where there are several options or confusion in my request, then ask me questions and / or give me options before proceeding with any code changes
-2. If I have a brand new app, I appreciate your creativity.  However, as I progress through development and testing I do not want creativity.  I want minimal changes to fix problems.  Ask me if you are unsure whether you should be creative or not
+2. While we are starting a task, I will enjoy your creativity.  However, as we progress through a task in debugging and testing I do not want creativity.  I want minimal changes to fix problems.  
 3. If I ask you to do something that is is in conflict with any of the rules files, then make the related change to the rules files so that I can review the change
 
 ## high level design
@@ -51,6 +53,16 @@ Git branching strategy
 Include guidelines for commit messages
 Specify which files should be in .gitignore
 
+1. I will do all of the testing in Streamlit in Snowflake rather than locally.  
+2. You are authorised to write every update to my git repository at
+[Enter the git repository URL here]
+3. I will pull those changes from GIT into my Snowflake app and test there
+4. If anything gets out of line, I understand Cursor cannot force push so I may choose to manually force push via running: 
+    git add .  #either run this to add all files or
+    git add pages/1_Cortex_Analyst.py utils/chart_utils.py #or run this line to only add particular files
+    git commit -m "Sync local project state" 
+    git push --force origin main # or replace main with the branch_name if forked
+
 ## Optional: Security Requirements:
 Add guidelines for handling sensitive data
 Specify authentication requirements
@@ -60,4 +72,5 @@ Include guidelines for API key management
 Add requirements for code documentation
 Specify requirements for user documentation
 Include API documentation guidelines if applicable
+
 
