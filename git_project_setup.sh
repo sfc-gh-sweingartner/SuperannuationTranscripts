@@ -12,7 +12,7 @@
 # =====================================================
 
 # Replace with your new repository name
-REPO_NAME="your-repo-name"
+REPO_NAME="SuperannuationTranscripts"
 
 # Replace with your GitHub username
 GITHUB_USERNAME="sfc-gh-sweingartner"
