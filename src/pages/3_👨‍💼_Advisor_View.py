@@ -193,7 +193,8 @@ def load_customer_360(customer_id):
             e.SENTIMENT_LABEL,
             e.PRIMARY_INTENT,
             e.CALL_SUMMARY,
-            e.CUSTOMER_INSIGHTS,
+            e.CUSTOMER_CONCERNS,
+            e.KEY_TOPICS,
             r.CALL_DURATION_SECONDS,
             LEFT(r.TRANSCRIPT_TEXT, 200) as TRANSCRIPT_PREVIEW
         FROM SUPERANNUATION.TRANSCRIPTS.ENRICHED_TRANSCRIPTS_ALL e
@@ -375,7 +376,17 @@ with col1:
                 
                 with col_a:
                     st.markdown(f"**Call Summary:** {call['CALL_SUMMARY']}")
-                    st.markdown(f"**Customer Insights:** {call.get('CUSTOMER_INSIGHTS', 'Insights not available')}")
+                    
+                    # Display customer concerns if available
+                    if call.get('CUSTOMER_CONCERNS') and call['CUSTOMER_CONCERNS'] not in [None, 'null', '']:
+                        concerns_text = str(call['CUSTOMER_CONCERNS']).strip('[]"').replace('","', ', ')
+                        st.markdown(f"**Customer Concerns:** {concerns_text}")
+                    
+                    # Display key topics if available
+                    if call.get('KEY_TOPICS') and call['KEY_TOPICS'] not in [None, 'null', '']:
+                        topics_text = str(call['KEY_TOPICS']).strip('[]"').replace('","', ', ')
+                        st.markdown(f"**Key Topics:** {topics_text}")
+                    
                     st.markdown(f"**Transcript Preview:** {call['TRANSCRIPT_PREVIEW']}...")
                 
                 with col_b:
