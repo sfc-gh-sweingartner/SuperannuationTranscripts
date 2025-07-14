@@ -80,9 +80,51 @@ CREATE TABLE ENRICHED_TRANSCRIPTS_REALTIME (
 
 ## AI Processing Functions
 
-### Sentiment Analysis
+### Enhanced AISQL Functions (2024)
+
+#### AI_CLASSIFY - Advanced Classification
 ```sql
--- Use Snowflake Cortex AI for sentiment analysis
+-- Enhanced intent classification with AI_CLASSIFY
+SELECT 
+    CALL_ID,
+    AI_CLASSIFY(
+        TRANSCRIPT_TEXT,
+        ['Complaint', 'Investment Inquiry', 'Account Query', 'Churn Risk', 
+         'Fee Question', 'Technical Support', 'Consolidation Request', 'Retirement Planning']
+    ) as PRIMARY_INTENT,
+    AI_CLASSIFY(
+        TRANSCRIPT_TEXT,
+        ['High Priority', 'Medium Priority', 'Low Priority']
+    ) as URGENCY_LEVEL
+FROM RAW_CALL_TRANSCRIPTS;
+```
+
+#### AI_FILTER - Intelligent Filtering
+```sql
+-- Advanced filtering for churn signals
+SELECT * FROM RAW_CALL_TRANSCRIPTS 
+WHERE AI_FILTER(TRANSCRIPT_TEXT, 'customer expressed intention to leave or switch providers');
+
+-- Filter for upsell opportunities
+SELECT * FROM RAW_CALL_TRANSCRIPTS 
+WHERE AI_FILTER(TRANSCRIPT_TEXT, 'customer interested in additional products or investment options');
+```
+
+#### AI_AGG - Cross-Transcript Insights
+```sql
+-- Aggregate insights across all customer calls
+SELECT 
+    CUSTOMER_ID,
+    AI_AGG(TRANSCRIPT_TEXT, 'Summarize all churn signals and concerns across these calls') as CHURN_SUMMARY,
+    AI_AGG(TRANSCRIPT_TEXT, 'Identify recurring themes and pain points') as PAIN_POINTS,
+    AI_AGG(TRANSCRIPT_TEXT, 'Suggest next best actions based on all interactions') as RECOMMENDED_ACTIONS
+FROM RAW_CALL_TRANSCRIPTS 
+GROUP BY CUSTOMER_ID;
+```
+
+#### Traditional Cortex Functions (Enhanced)
+```sql
+-- Sentiment Analysis
 SELECT 
     CALL_ID,
     SNOWFLAKE.CORTEX.SENTIMENT(TRANSCRIPT_TEXT) as SENTIMENT_SCORE,
@@ -92,26 +134,21 @@ SELECT
         ELSE 'Neutral'
     END as SENTIMENT_LABEL
 FROM RAW_CALL_TRANSCRIPTS;
-```
 
-### Intent Detection
-```sql
--- Use Claude-4-Sonnet for intent classification
+-- Enhanced Summarization with AI_SUMMARIZE
 SELECT 
     CALL_ID,
-    SNOWFLAKE.CORTEX.COMPLETE(
-        'claude-4-sonnet',
-        'Analyze the following call transcript and identify the customer''s primary intent. Choose from: Complaint, Investment Inquiry, Account Query, Churn Risk, Fee Question, Technical Support, Consolidation Request, Retirement Planning. Only return the category name: ' || TRANSCRIPT_TEXT
-    ) as PRIMARY_INTENT
+    AI_SUMMARIZE(TRANSCRIPT_TEXT, 'action items and follow-ups') as ACTION_SUMMARY,
+    AI_SUMMARIZE(TRANSCRIPT_TEXT, 'customer concerns and requests') as CONCERN_SUMMARY
 FROM RAW_CALL_TRANSCRIPTS;
-```
 
-### Summarization
-```sql
--- Use Cortex AI for call summarization
+-- Advanced Intent Detection with AI_COMPLETE
 SELECT 
     CALL_ID,
-    SNOWFLAKE.CORTEX.SUMMARIZE(TRANSCRIPT_TEXT) as CALL_SUMMARY
+    AI_COMPLETE(
+        'claude-4-sonnet',
+        'Analyze this call transcript and provide: 1) Primary intent, 2) Emotional state, 3) Churn risk (0-100), 4) Recommended next action. Format as JSON: ' || TRANSCRIPT_TEXT
+    ) as DETAILED_ANALYSIS
 FROM RAW_CALL_TRANSCRIPTS;
 ```
 

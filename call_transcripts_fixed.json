@@ -1,0 +1,562 @@
+[
+  {
+    "CALL_ID": "CALL001",
+    "CUSTOMER_ID": "CUST001",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T09:05:12Z",
+    "CALL_DURATION_SECONDS": 305,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm calling about my superannuation account. My name is Sarah Chen.\nAgent: Good morning, Sarah. How can I assist you today? Can I please get your member ID for verification?\nCustomer: It's 78901234. I'm looking at my latest statement and the balance seems a bit lower than I expected. Could you explain the recent deductions?\nAgent: Certainly, Sarah. Let me pull up your account. Ah, I see a few administrative fees and a slight market adjustment in the last quarter. Would you like me to go through each line item?\nCustomer: Yes, please. Especially the market adjustment part. I'm a bit worried about the current economic climate.\nAgent: I understand. The 'Growth Plus' fund you're invested in experienced a minor dip, but it's within expected fluctuations for its risk profile. We can discuss your investment strategy if you'd like to review your risk tolerance.\nCustomer: Maybe later. For now, just understanding these deductions is enough. Thanks for clarifying.\nAgent: My pleasure, Sarah. Is there anything else I can help you with today?\nCustomer: No, that's all for now. Thank you for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL002",
+    "CUSTOMER_ID": "CUST002",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T09:10:45Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm David Lee. I need some information about consolidating my super.\nAgent: Hello, David. Thanks for calling. Can you confirm your member ID, please?\nCustomer: It's 12345678.\nAgent: Got it. You're looking to consolidate your super. Do you have details of your other fund, or are you just exploring the process?\nCustomer: I have an old fund from a previous job, 'FutureSecure Super'. I'm not sure how to transfer it over.\nAgent: We can definitely help with that. I can initiate the transfer process for you, or I can send you a guide with the steps. It's usually quite straightforward. Are you aware of any exit fees from your old fund?\nCustomer: I'm not sure about fees. Could you check that for me?\nAgent: I can't directly access their fee structure, but I can tell you what questions to ask them. I'll also send you our consolidation form. Would you like me to email that to you now?\nCustomer: Yes, please. That would be great. Thanks.\nAgent: No problem, David. Anything else?\nCustomer: No, that's it. Cheers."
+  },
+  {
+    "CALL_ID": "CALL003",
+    "CUSTOMER_ID": "CUST003",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T09:15:20Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Maria Garcia. I'm calling because I haven't received my annual statement.\nAgent: Good afternoon, Maria. I'm sorry to hear that. Can I get your member ID to check the mailing status?\nCustomer: It's 98765432.\nAgent: Thank you. I see your statement was dispatched on June 1st. Sometimes there can be postal delays. Would you like me to resend it, or would you prefer to access it digitally through our online portal?\nCustomer: I've tried the online portal, but I'm having trouble logging in. It keeps saying 'invalid credentials'.\nAgent: I can help you reset your password right now. It's a quick process. Or, if you prefer, I can email you a temporary password and instructions.\nCustomer: A temporary password would be best. I'm a bit frustrated with the online system lately.\nAgent: I understand. We're constantly working to improve our digital experience. I've just sent the temporary password to your registered email address. Please check your spam folder if you don't see it immediately.\nCustomer: Okay, I'll check. Thanks for your help.\nAgent: You're most welcome, Maria. Is there anything else?\nCustomer: No, that's all. Bye."
+  },
+  {
+    "CALL_ID": "CALL004",
+    "CUSTOMER_ID": "CUST004",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T09:20:00Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, my name is John Smith. I want to discuss my investment options.\nAgent: Hello, John. Thanks for calling. Could you provide your member ID, please?\nCustomer: It's 23456789.\nAgent: Thank you, John. I see you're currently in our 'Balanced Growth' option. What specifically would you like to discuss about your investments?\nCustomer: I've been reading about sustainable investing, and I'm interested in moving some of my super into an ESG-focused fund. Do you offer anything like that?\nAgent: Yes, we do, John. We have the 'Sustainable Future Portfolio' which invests in companies with strong Environmental, Social, and Governance practices. It has a slightly different risk profile. Would you like me to send you the product disclosure statement for it?\nCustomer: That sounds interesting. Yes, please send me the PDS. What's the typical return on that fund?\nAgent: Past performance isn't an indicator of future returns, but I can tell you its historical performance over the last 3 and 5 years. I'll include that in the email with the PDS. Is there anything else?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, John. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL005",
+    "CUSTOMER_ID": "CUST005",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T09:25:30Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Emily White. I'm calling because I'm thinking of retiring soon and need some advice.\nAgent: Hello, Emily. Congratulations! Can I get your member ID, please?\nCustomer: It's 34567890.\nAgent: Thank you. I see you're 64. That's exciting! What specific aspects of retirement planning are you interested in?\nCustomer: I want to know about drawing down my super. What are my options? And how does it affect my pension?\nAgent: We offer several options, including an Account-Based Pension and lump sum withdrawals. The impact on your Age Pension can be complex, as it depends on your overall assets and income. I'd highly recommend scheduling a free consultation with one of our financial advisors to discuss your specific situation in detail.\nCustomer: A consultation sounds good. How do I book that?\nAgent: I can transfer you directly to our advice team now to book an appointment, or I can send you a link to our online booking system. Which would you prefer?\nCustomer: Transfer me, please. I have a few specific questions.\nAgent: Connecting you now. Please hold."
+  },
+  {
+    "CALL_ID": "CALL006",
+    "CUSTOMER_ID": "CUST006",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T09:30:10Z",
+    "CALL_DURATION_SECONDS": 295,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Michael Brown. I'm calling about a direct debit issue.\nAgent: Hi Michael. What seems to be the problem? Can I get your member ID?\nCustomer: It's 45678901. My last contribution didn't go through, and I'm not sure why. My employer sent it.\nAgent: Let me check. I see a failed payment attempt on July 5th. It looks like there might have been insufficient funds in the linked account, or an incorrect BSB/account number. Could you confirm your bank details with me?\nCustomer: Oh, I recently changed banks. I must have forgotten to update it with my employer. What do I need to do now?\nAgent: You'll need to update your bank details with your employer, and they'll need to re-process the contribution. I can also send you a form to update your details directly with us for any future personal contributions.\nCustomer: Okay, I'll do that. Thanks for letting me know. I was worried.\nAgent: No problem at all, Michael. We're here to help. Is there anything else?\nCustomer: No, that's it. Thanks.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL007",
+    "CUSTOMER_ID": "CUST007",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T09:35:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Jessica Taylor. I have a question about my insurance cover.\nAgent: Hello, Jessica. What's your member ID, please?\nCustomer: It's 56789012.\nAgent: Thank you. You have Death and Total & Permanent Disability (TPD) cover with us. What's your question?\nCustomer: I'm thinking of increasing my TPD cover. How do I do that, and what are the implications for my premiums?\nAgent: You can apply to increase your cover through our online portal or by completing a form. Increasing your cover will generally increase your premiums, and it may require a health assessment depending on the amount. I can send you a link to the online application and a guide to understanding insurance in super.\nCustomer: That would be helpful. I just want to make sure I'm adequately covered.\nAgent: Absolutely. It's important to review your insurance regularly. I'll send that information to your email now. Is there anything else?\nCustomer: No, that's all. Thanks.\nAgent: You're welcome, Jessica. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL008",
+    "CUSTOMER_ID": "CUST008",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T09:40:00Z",
+    "CALL_DURATION_SECONDS": 270,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, it's Chris Wilson. I'm calling about my investment performance.\nAgent: Good morning, Chris. What's your member ID?\nCustomer: It's 67890123.\nAgent: Thanks. I see you're in our 'High Growth' option. What are your concerns about its performance?\nCustomer: It seems to be underperforming compared to what I'm seeing in the news. I'm a bit disappointed.\nAgent: I understand your concern. While the 'High Growth' option aims for higher long-term returns, it also carries higher short-term volatility. We recommend reviewing performance over a longer period, typically 5-10 years, for this option. Would you like me to send you a detailed performance report?\nCustomer: Yes, please. And maybe some information on how it compares to other funds.\nAgent: I can send you our fund's performance report, but we can't provide direct comparisons to other funds. I'll email that to you shortly. Is there anything else?\nCustomer: No, that's fine. Thanks for the info.\nAgent: You're welcome, Chris. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL009",
+    "CUSTOMER_ID": "CUST009",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T09:45:15Z",
+    "CALL_DURATION_SECONDS": 320,
+    "TRANSCRIPT_TEXT": "Customer: Hello, I'm Olivia Green. I'm calling to update my contact details.\nAgent: Hi Olivia. What's your member ID, please?\nCustomer: It's 78901234.\nAgent: Thank you. What details would you like to update?\nCustomer: I've moved house, so I need to change my address. And my phone number has changed too.\nAgent: No problem. Can you please provide your new address and phone number for verification?\nCustomer: (Provides new details). Also, I'm having trouble accessing the online portal to do this myself. It's quite frustrating.\nAgent: I apologize for the inconvenience. I've updated your address and phone number for you. Regarding the portal, are you encountering a specific error message?\nCustomer: It just freezes when I try to log in. I've tried on different browsers.\nAgent: I'll escalate this to our technical team to investigate. In the meantime, you can always call us for any updates. Is there anything else I can help you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Olivia. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL010",
+    "CUSTOMER_ID": "CUST010",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T09:50:00Z",
+    "CALL_DURATION_SECONDS": 285,
+    "TRANSCRIPT_TEXT": "Customer: Hi, this is Liam Hall. I have a question about my contributions.\nAgent: Hello, Liam. What's your member ID?\nCustomer: It's 89012345.\nAgent: Thanks. What's your question about contributions?\nCustomer: I'm thinking of making some extra personal contributions. How do I do that, and are they tax-deductible?\nAgent: Yes, you can make personal contributions, and they can be tax-deductible up to certain limits. You can make them via direct debit, BPAY, or through our online portal. I can send you a guide on making personal contributions and the tax implications.\nCustomer: That would be great. I want to maximize my super before retirement.\nAgent: Excellent strategy, Liam. I'll email that information to you now. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL011",
+    "CUSTOMER_ID": "CUST011",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T09:55:30Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm Sophia King. I'm calling about a complaint I lodged last week.\nAgent: Good morning, Sophia. I'm sorry you're still experiencing issues. Can I get your member ID and the reference number for your complaint?\nCustomer: It's 90123456, and the reference is COMP2025-07-03-A.\nAgent: Thank you. I see your complaint regarding the delay in processing your withdrawal request. It's currently being reviewed by our escalations team. I understand your frustration.\nCustomer: It's been over a week! I need that money. This is unacceptable. I'm seriously considering moving my super elsewhere if this isn't resolved quickly.\nAgent: I completely understand your urgency, Sophia. I've just sent a follow-up to the team to prioritize your case and requested an immediate update. I'll personally monitor this and call you back with an update within the next two hours. Would that be acceptable?\nCustomer: (Sighs) Fine. But I expect a resolution soon.\nAgent: We're doing our best to expedite it. Is there anything else I can assist with right now?\nCustomer: No, just get this sorted.\nAgent: I will, Sophia. Thank you for your patience."
+  },
+  {
+    "CALL_ID": "CALL012",
+    "CUSTOMER_ID": "CUST012",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T10:00:10Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Noah Wright. I'm calling about my online access.\nAgent: Hello, Noah. What's your member ID?\nCustomer: It's 01234567.\nAgent: Thanks. What's the issue with your online access?\nCustomer: I can't seem to link my account to the new mobile app. It keeps giving me an error message about 'account not found'.\nAgent: I apologize for the inconvenience. The new app sometimes has a slight delay in syncing with older accounts. Have you tried uninstalling and reinstalling the app?\nCustomer: Yes, I did that already. Still the same problem. It's really annoying.\nAgent: I understand. Let me try a manual refresh on our end. Please bear with me for a moment. Okay, I've just refreshed your account linkage. Could you try logging in again now?\nCustomer: (Pause) Oh, it worked! Finally! Thank you so much.\nAgent: Excellent! Glad I could help, Noah. Is there anything else?\nCustomer: No, that's all. You've been a great help.\nAgent: My pleasure. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL013",
+    "CUSTOMER_ID": "CUST013",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T10:05:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Isabella Scott. I have a question about my beneficiaries.\nAgent: Good afternoon, Isabella. What's your member ID?\nCustomer: It's 12345678.\nAgent: Thank you. What would you like to know about your beneficiaries?\nCustomer: I recently got married, and I want to update my nominated beneficiaries to include my husband. How do I do that?\nAgent: Congratulations, Isabella! You can update your beneficiaries through our online portal, or by completing a 'Binding Death Benefit Nomination' form. A binding nomination ensures your super is paid according to your wishes. I can email you the form and instructions.\nCustomer: That would be great. Is there a time limit to do this?\nAgent: Binding nominations are generally valid for three years, so it's good to review them regularly. I'll send the form to your email now. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Isabella. Have a lovely day."
+  },
+  {
+    "CALL_ID": "CALL014",
+    "CUSTOMER_ID": "CUST014",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T10:10:30Z",
+    "CALL_DURATION_SECONDS": 275,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm James Baker. I'm calling about my fees.\nAgent: Hello, James. What's your member ID?\nCustomer: It's 23456789.\nAgent: Thanks. What about your fees are you concerned about?\nCustomer: I feel like the fees are too high compared to other funds. I'm considering switching if I can't get a better deal.\nAgent: I understand your concern about fees, James. Our fee structure is competitive and reflects the comprehensive services we provide, including personalized advice and a wide range of investment options. Would you like me to send you a breakdown of your fees and how they compare to our different investment options?\nCustomer: Yes, please send me the breakdown. I want to see if there's a cheaper option that still meets my needs.\nAgent: I'll email that to you now. It's important to consider the overall value, not just the fees. Is there anything else?\nCustomer: No, that's all for now. Thanks.\nAgent: You're welcome, James. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL015",
+    "CUSTOMER_ID": "CUST015",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T10:15:00Z",
+    "CALL_DURATION_SECONDS": 305,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, this is Mia Adams. I have a question about my tax.\nAgent: Good morning, Mia. What's your member ID?\nCustomer: It's 34567890.\nAgent: Thank you. What's your tax question?\nCustomer: I'm confused about the tax on my super contributions. Can you explain it simply?\nAgent: Certainly. Generally, employer contributions and personal contributions for which you claim a tax deduction are taxed at 15% within the super fund. This is often lower than your marginal income tax rate. Would you like to know more about contribution caps?\nCustomer: Yes, what are the limits? I want to make sure I don't go over.\nAgent: There are two main caps: the concessional contributions cap and the non-concessional contributions cap. I can send you a detailed fact sheet on superannuation tax and contribution limits. It's quite comprehensive.\nCustomer: That would be very helpful. Thanks.\nAgent: My pleasure, Mia. Is there anything else I can help you with today?\nCustomer: No, that's all. Thanks.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL016",
+    "CUSTOMER_ID": "CUST016",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T10:20:20Z",
+    "CALL_DURATION_SECONDS": 295,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Ethan Clark. I'm calling about my investment risk profile.\nAgent: Hello, Ethan. What's your member ID?\nCustomer: It's 45678901.\nAgent: Thanks. What about your risk profile would you like to discuss?\nCustomer: I'm currently in the 'Conservative' option, but I'm thinking I might be able to take on a bit more risk for potentially higher returns. How do I change my investment option?\nAgent: You can change your investment option easily through our online portal, or by completing an investment choice form. Before you do, I'd recommend reviewing your risk profile to ensure it aligns with your new choice. We have an online risk profiler tool.\nCustomer: Oh, I didn't know about that. Can you send me the link to the risk profiler and the form?\nAgent: Absolutely. I'll email those to you now. Remember, changing your investment option can impact your long-term returns. Is there anything else?\nCustomer: No, that's all. Thanks for the info.\nAgent: You're welcome, Ethan. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL017",
+    "CUSTOMER_ID": "CUST017",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T10:25:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Ava Lewis. I'm calling about my lost member card.\nAgent: Hi Ava. I can help you with that. Can I get your member ID, please?\nCustomer: It's 56789012.\nAgent: Thank you. I can arrange for a new member card to be sent to your registered address. Is your address still current?\nCustomer: Yes, it is. I also wanted to ask about accessing my account without the card. Is there a way to do that?\nAgent: Yes, you can always log in to our online portal using your member ID and password. The card is primarily for identification purposes and accessing certain services. I'll process the new card request now. It should arrive within 7-10 business days.\nCustomer: Okay, great. Thanks for your help.\nAgent: My pleasure, Ava. Is there anything else?\nCustomer: No, that's all. Bye."
+  },
+  {
+    "CALL_ID": "CALL018",
+    "CUSTOMER_ID": "CUST018",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T10:30:30Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Lucas Turner. I'm calling about my super balance.\nAgent: Hello, Lucas. What's your member ID?\nCustomer: It's 67890123.\nAgent: Thanks. What about your balance would you like to know?\nCustomer: I just want to know my current balance. And how often is it updated?\nAgent: Your current balance is $155,230.50. Your balance is updated daily to reflect market movements and contributions. You can always check it in real-time on our online portal or mobile app.\nCustomer: Okay, good to know. I thought it was only updated monthly. Thanks.\nAgent: No problem, Lucas. Is there anything else I can help you with today?\nCustomer: No, that's all. Cheers.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL019",
+    "CUSTOMER_ID": "CUST019",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T10:35:10Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, this is Chloe Parker. I'm calling about my retirement income stream.\nAgent: Good morning, Chloe. What's your member ID?\nCustomer: It's 78901234.\nAgent: Thank you. What's your question about your retirement income stream?\nCustomer: I'm currently receiving monthly payments, but I want to change it to quarterly payments. Is that possible?\nAgent: Yes, Chloe, you can definitely change your payment frequency. You can do this through our online portal or by completing a 'Change of Payment Details' form. I can email you the form if you prefer.\nCustomer: The online portal is a bit confusing for me. Could you send the form, please?\nAgent: Certainly. I'll email that to you now. Please ensure you return the completed form to us before the next payment cycle to ensure the change takes effect in time.\nCustomer: Okay, I will. Thanks for your help.\nAgent: My pleasure, Chloe. Is there anything else?\nCustomer: No, that's all. Bye."
+  },
+  {
+    "CALL_ID": "CALL020",
+    "CUSTOMER_ID": "CUST020",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T10:40:00Z",
+    "CALL_DURATION_SECONDS": 285,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Daniel Evans. I'm calling about my super fund's ethical investments.\nAgent: Hello, Daniel. What's your member ID?\nCustomer: It's 89012345.\nAgent: Thanks. What would you like to know about our ethical investments?\nCustomer: I'm really keen on investing in companies that are environmentally responsible. Do you have a specific fund for that, and what are its criteria?\nAgent: Yes, Daniel, we have the 'Green Horizons Fund' which focuses on companies with strong environmental credentials and sustainable practices. Its criteria include low carbon footprint, renewable energy focus, and ethical supply chains. I can send you the PDS for this fund.\nCustomer: That sounds exactly what I'm looking for. Please send the PDS. What's the minimum investment for that fund?\nAgent: There's no minimum investment to switch your existing super balance into it. I'll email the PDS to you now. Is there anything else?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, Daniel. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL021",
+    "CUSTOMER_ID": "CUST021",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T10:45:10Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm Sophie Turner. I'm calling about my account details.\nAgent: Good morning, Sophie. How can I help you? Can I get your member ID, please?\nCustomer: It's 90123456. I just wanted to confirm my current address on file.\nAgent: Certainly, Sophie. Your current address on file is 123 Main Street, Anytown, NSW 2000. Is that correct?\nCustomer: Yes, that's right. Perfect. I just wanted to double-check. Thanks.\nAgent: No problem at all. Is there anything else I can assist you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL022",
+    "CUSTOMER_ID": "CUST022",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T10:50:00Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Ben Carter. I'm calling about my super contributions from my new employer.\nAgent: Hello, Ben. Thanks for calling. Can you confirm your member ID, please?\nCustomer: It's 01234567.\nAgent: Got it. You've started a new job. Has your employer made their first contribution yet?\nCustomer: They said they did last week, but I don't see it reflected in my balance yet.\nAgent: Let me check. Sometimes it can take a few business days for contributions to clear and appear on your account. I don't see it processed on our end yet. Could you confirm your employer's ABN or name so I can check for pending payments?\nCustomer: It's 'Tech Solutions Pty Ltd'. ABN 9988776655.\nAgent: Thank you. I'll make an inquiry on our end. It might just be in transit. I'll send you an SMS once it's processed. Would that be okay?\nCustomer: Yes, please. That would be great. Thanks.\nAgent: No problem, Ben. Anything else?\nCustomer: No, that's it. Cheers."
+  },
+  {
+    "CALL_ID": "CALL023",
+    "CUSTOMER_ID": "CUST023",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T10:55:15Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Chloe Davis. I'm calling about my investment performance.\nAgent: Good afternoon, Chloe. I'm happy to help. Can I get your member ID to check your portfolio?\nCustomer: It's 12345678.\nAgent: Thank you. I see you're invested in our 'Diversified Growth' option. What are your concerns about its performance?\nCustomer: I'm just not seeing the returns I expected. My friend in another fund seems to be doing much better. I'm starting to wonder if I should switch.\nAgent: I understand your concern, Chloe. Investment performance can fluctuate, and it's important to consider your long-term goals. Our 'Diversified Growth' option is designed for steady growth over time. Would you like me to send you a detailed performance report for your fund, and perhaps some information on how our investment strategy works?\nCustomer: Yes, please send the report. I need to understand this better. I'm feeling quite uncertain.\nAgent: I'll email that to you now. We also offer free financial advice sessions if you'd like to discuss your options in more detail with an advisor. Would you be interested in that?\nCustomer: Maybe. Send the report first. Thanks.\nAgent: My pleasure, Chloe. Is there anything else?\nCustomer: No, that's all. Bye."
+  },
+  {
+    "CALL_ID": "CALL024",
+    "CUSTOMER_ID": "CUST024",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T11:00:00Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, my name is Jack Miller. I want to update my employment details.\nAgent: Hello, Jack. Thanks for calling. Could you provide your member ID, please?\nCustomer: It's 23456789.\nAgent: Thank you, Jack. What employment details would you like to update?\nCustomer: I've changed jobs, so my employer details need to be updated. And my salary has increased.\nAgent: No problem. I can update your employer details for you. For salary changes, your new employer will typically provide us with that information when they make your contributions. Can you provide your new employer's name and ABN?\nCustomer: It's 'Global Innovations Inc.', ABN 1122334455.\nAgent: Got it. I've updated your employer details. Is there anything else I can help you with today?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, Jack. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL025",
+    "CUSTOMER_ID": "CUST025",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T11:05:30Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Grace Wilson. I'm calling about my super balance and retirement.\nAgent: Hello, Grace. How can I assist you today? Can I get your member ID for verification?\nCustomer: It's 34567890. I'm 58 and thinking about what my super will look like when I retire. Can I get a projection?\nAgent: Certainly, Grace. We can provide a retirement projection based on your current balance, contributions, and investment strategy. It's a good way to see if you're on track. Would you like me to generate a basic projection for you now, or would you prefer a more detailed one with an advisor?\nCustomer: A basic one for now would be good. Just to get an idea.\nAgent: Okay, I'll run that for you. It will be an estimate based on standard assumptions. I'll email the projection to you within the next hour. Is there anything else?\nCustomer: No, that's all for now. Thank you for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL026",
+    "CUSTOMER_ID": "CUST026",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T11:10:10Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Samuel King. I'm calling about my online statements.\nAgent: Hi Samuel. What seems to be the problem? Can I get your member ID?\nCustomer: It's 45678901. I can't seem to download my statements from the portal. The PDF link isn't working.\nAgent: I apologize for the technical issue, Samuel. Let me check the system. It might be a temporary glitch. Have you tried on a different device or browser?\nCustomer: Yes, I tried on my phone and my laptop. Same problem. It's really frustrating when I can't access my own documents.\nAgent: I understand. I'll escalate this to our IT team immediately. In the meantime, I can email you copies of your last few statements directly. Would that be helpful?\nCustomer: Yes, please. That would be great. Thanks.\nAgent: No problem at all, Samuel. We're here to help. Is there anything else?\nCustomer: No, that's it. Cheers."
+  },
+  {
+    "CALL_ID": "CALL027",
+    "CUSTOMER_ID": "CUST027",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T11:15:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Lily Green. I have a question about my insurance premiums.\nAgent: Hello, Lily. What's your member ID, please?\nCustomer: It's 56789012.\nAgent: Thank you. What's your question about your insurance premiums?\nCustomer: My premiums seem to have gone up quite a bit. Can you explain why?\nAgent: Let me check your policy details. Insurance premiums can increase due to age, changes in your cover, or adjustments to the insurer's rates. I see a slight increase due to your age bracket. Would you like me to send you a detailed breakdown of your premiums and the factors affecting them?\nCustomer: Yes, please. I just want to understand it fully. It feels like a lot.\nAgent: I'll email that to you now. We also offer options to adjust your cover if you wish to manage your premiums. Is there anything else?\nCustomer: No, that's all. Thanks.\nAgent: You're welcome, Lily. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL028",
+    "CUSTOMER_ID": "CUST028",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T11:20:00Z",
+    "CALL_DURATION_SECONDS": 270,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, it's Oliver Hall. I'm calling about my investment choice.\nAgent: Good morning, Oliver. What's your member ID?\nCustomer: It's 67890123.\nAgent: Thanks. What about your investment choice would you like to discuss?\nCustomer: I'm in the 'Balanced' option, but I'm thinking of moving to something more aggressive. What are the risks involved?\nAgent: Moving to a more aggressive option, like our 'High Growth' fund, means potentially higher returns but also higher volatility and risk of capital loss. It's important to ensure it aligns with your risk tolerance and time horizon. I can send you information on our different investment options and their risk profiles.\nCustomer: Yes, please send that. I want to make an informed decision.\nAgent: Absolutely. I'll email that to you shortly. Is there anything else?\nCustomer: No, that's fine. Thanks for the info.\nAgent: You're welcome, Oliver. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL029",
+    "CUSTOMER_ID": "CUST029",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T11:25:15Z",
+    "CALL_DURATION_SECONDS": 320,
+    "TRANSCRIPT_TEXT": "Customer: Hello, I'm Isabella Baker. I'm calling to update my personal details.\nAgent: Hi Isabella. What's your member ID, please?\nCustomer: It's 78901234.\nAgent: Thank you. What details would you like to update?\nCustomer: I've changed my name after marriage, and I need to update my surname. Also, my email address has changed.\nAgent: Congratulations, Isabella! I can update your email address for you now. For a name change, we'll require a certified copy of your marriage certificate or change of name certificate for security purposes. I can email you the form and instructions on how to submit the document.\nCustomer: Oh, that's a bit of a hassle. Can't I just tell you over the phone?\nAgent: Unfortunately, for security and compliance reasons, we need the certified document for name changes. I apologize for the inconvenience. I've sent the email with instructions. Is there anything else I can help you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Isabella. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL030",
+    "CUSTOMER_ID": "CUST030",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T11:30:00Z",
+    "CALL_DURATION_SECONDS": 285,
+    "TRANSCRIPT_TEXT": "Customer: Hi, this is Mason Scott. I have a question about my super fund's performance.\nAgent: Hello, Mason. What's your member ID?\nCustomer: It's 89012345.\nAgent: Thanks. What's your question about performance?\nCustomer: I'm just generally concerned about the market. Is my super safe? I'm thinking of moving it to a cash option.\nAgent: I understand your concern about market volatility, Mason. Our funds are diversified to manage risk. Moving to a cash option might protect against short-term market dips, but it could also mean missing out on long-term growth and may not keep pace with inflation. Would you like me to send you information on our 'Capital Stable' option, which has a higher allocation to cash and fixed interest?\nCustomer: Yes, please send that. I'm feeling very nervous about my investments.\nAgent: I'll email that to you now. Remember, it's important to consider your long-term financial goals. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL031",
+    "CUSTOMER_ID": "CUST031",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T11:35:30Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm Harper Rodriguez. I'm calling about my withdrawal request.\nAgent: Good morning, Harper. How can I help you? Can I get your member ID and the reference number for your request?\nCustomer: It's 90123456, and the reference is WITHDRAW2025-07-01-B.\nAgent: Thank you. I see your withdrawal request for financial hardship. It's currently being processed and is awaiting final approval. I understand you're eager for this to be completed.\nCustomer: Yes, I really need that money urgently. It's been a few days already. Is there anything I can do to speed it up?\nAgent: I've just flagged your request as urgent with the processing team. While I can't guarantee an exact timeframe, they will prioritize it. I'll send you an SMS notification as soon as the funds are disbursed. Would that be okay?\nCustomer: Yes, that would be helpful. Thanks.\nAgent: My pleasure, Harper. Is there anything else I can assist you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL032",
+    "CUSTOMER_ID": "CUST032",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T11:40:10Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Evelyn Perez. I'm calling about my super statement.\nAgent: Hello, Evelyn. What's your member ID?\nCustomer: It's 01234567.\nAgent: Thanks. What about your statement?\nCustomer: I received my statement, but I don't understand some of the terms. Like 'unit price' and 'crediting rate'. Can you explain them?\nAgent: Certainly. The 'unit price' is the value of each unit in your investment option, which changes daily. The 'crediting rate' applies to our 'Cash' option and is the interest rate applied to your balance. Would you like me to send you a glossary of superannuation terms?\nCustomer: Yes, please. That would be really helpful. It's all a bit confusing.\nAgent: No problem, Evelyn. I'll email that to you now. Is there anything else I can help you with today?\nCustomer: No, that's it. Cheers.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL033",
+    "CUSTOMER_ID": "CUST033",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T11:45:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Alexander Nguyen. I have a question about my pension.\nAgent: Good afternoon, Alexander. What's your member ID?\nCustomer: It's 12345678.\nAgent: Thank you. What's your question about your pension?\nCustomer: I'm currently receiving an Age Pension, and I'm worried about how my super withdrawals might affect it. Can you advise me?\nAgent: I can provide general information, but for specific advice on how your super withdrawals impact your Age Pension, I'd strongly recommend speaking with a financial advisor or Centrelink directly. We can arrange a free consultation with one of our advisors if you'd like.\nCustomer: A consultation sounds good. I want to make sure I don't lose my pension.\nAgent: I understand. I can transfer you to our advice team now to book an appointment, or I can send you a link to our online booking system. Which would you prefer?\nCustomer: Transfer me, please. I'd like to talk to someone today.\nAgent: Connecting you now. Please hold."
+  },
+  {
+    "CALL_ID": "CALL034",
+    "CUSTOMER_ID": "CUST034",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T11:50:30Z",
+    "CALL_DURATION_SECONDS": 275,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Victoria Kim. I'm calling about my super account.\nAgent: Hello, Victoria. What's your member ID?\nCustomer: It's 23456789.\nAgent: Thanks. What about your account?\nCustomer: I'm trying to set up a regular personal contribution, but I can't find the option on the website. It's very confusing.\nAgent: I apologize for the difficulty, Victoria. The option is usually under 'Contributions' in the online portal. I can walk you through the steps now, or I can send you a direct link to the correct page.\nCustomer: Could you walk me through it? I'm on the website now.\nAgent: Certainly. First, log in and navigate to 'My Contributions'. Do you see 'Make a Personal Contribution' there?\nCustomer: Yes, I see it now! Thank you. That was much easier with your help.\nAgent: Excellent! Glad I could assist. Is there anything else?\nCustomer: No, that's all for now. Thanks.\nAgent: You're welcome, Victoria. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL035",
+    "CUSTOMER_ID": "CUST035",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T11:55:00Z",
+    "CALL_DURATION_SECONDS": 305,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, this is Daniel Brown. I have a question about my insurance.\nAgent: Good morning, Daniel. What's your member ID?\nCustomer: It's 34567890.\nAgent: Thank you. What's your question about your insurance?\nCustomer: I'm not sure if I have enough insurance cover through my super. How do I assess that?\nAgent: That's a very important question, Daniel. We offer a free online insurance needs calculator that can help you estimate how much cover you might need based on your circumstances. I can send you the link to that tool.\nCustomer: Yes, please send that. I want to make sure my family is protected.\nAgent: Absolutely. I'll email that to you now. Remember, the calculator provides an estimate, and for personalized advice, a financial advisor can help. Is there anything else?\nCustomer: No, that's all. Thanks.\nAgent: My pleasure, Daniel. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL036",
+    "CUSTOMER_ID": "CUST036",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T12:00:20Z",
+    "CALL_DURATION_SECONDS": 295,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Scarlett Jones. I'm calling about my super account.\nAgent: Hello, Scarlett. What's your member ID?\nCustomer: It's 45678901.\nAgent: Thanks. What about your account?\nCustomer: I'm trying to change my investment option, but the website is really slow and keeps timing out. It's very frustrating.\nAgent: I apologize for the technical difficulties, Scarlett. We've been experiencing higher traffic on the portal today. I can process the investment option change for you over the phone if you'd like, or I can send you a form to complete.\nCustomer: Can you do it over the phone? I just want it done.\nAgent: Certainly. What investment option would you like to switch to?\nCustomer: The 'Balanced' option, please.\nAgent: Okay, I've processed that for you. You'll receive a confirmation email shortly. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Scarlett. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL037",
+    "CUSTOMER_ID": "CUST037",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T12:05:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Leo Garcia. I'm calling about my super balance.\nAgent: Hi Leo. How can I help you? Can I get your member ID, please?\nCustomer: It's 56789012. I just wanted to know my current balance and if I'm on track for retirement.\nAgent: Certainly, Leo. Your current balance is $285,120.75. To assess if you're on track for retirement, we'd need to consider your desired retirement age and income. Would you like to use our online retirement planner tool, or would you prefer a quick estimate over the phone?\nCustomer: A quick estimate would be good. I'm aiming for 65.\nAgent: Okay, based on your current contributions and investment option, a rough estimate suggests you're on a good path, but a personalized plan would give you more accuracy. I can send you a link to our retirement planning resources. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL038",
+    "CUSTOMER_ID": "CUST038",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T12:10:30Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Amelia Davis. I'm calling about my super contributions.\nAgent: Hello, Amelia. Thanks for calling. Can you confirm your member ID, please?\nCustomer: It's 67890123.\nAgent: Got it. What about your contributions?\nCustomer: I've been on parental leave, and my contributions have stopped. What happens to my super during this time?\nAgent: During parental leave, your employer might not be required to make super contributions, but your account remains active. You can consider making personal contributions if you wish, or you can apply for the government's super co-contribution if you meet the eligibility criteria. I can send you information on both options.\nCustomer: That would be helpful. I don't want my super to fall behind.\nAgent: I understand. I'll email that to you now. Is there anything else?\nCustomer: No, that's it. Cheers.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL039",
+    "CUSTOMER_ID": "CUST039",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T12:15:00Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Henry White. I'm calling about my investment options.\nAgent: Good afternoon, Henry. I'm happy to help. Can I get your member ID to check your portfolio?\nCustomer: It's 78901234.\nAgent: Thank you. I see you're currently in our 'Conservative' option. What specifically would you like to discuss?\nCustomer: I'm getting closer to retirement, and I'm worried about market downturns. Should I be moving to something even safer, like cash?\nAgent: That's a common concern as retirement approaches, Henry. While moving to cash can reduce volatility, it also means lower potential returns and may not keep pace with inflation. We have a 'Capital Stable' option that balances security with some growth potential. I can send you information on that, or we can discuss a transition-to-retirement strategy with an advisor.\nCustomer: Send me the info on 'Capital Stable'. I'm really anxious about losing money.\nAgent: I'll email that to you now. Remember, it's about finding the right balance for your comfort level. Is there anything else?\nCustomer: No, that's all. Bye."
+  },
+  {
+    "CALL_ID": "CALL040",
+    "CUSTOMER_ID": "CUST040",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T12:20:20Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, my name is Ella Harris. I want to know about withdrawing my super.\nAgent: Hello, Ella. Thanks for calling. Could you provide your member ID, please?\nCustomer: It's 89012345.\nAgent: Thank you, Ella. What are your circumstances for withdrawing your super?\nCustomer: I'm 62 and I've stopped working. Can I access all of it now?\nAgent: If you've reached your preservation age and met a condition of release, such as retiring, you can generally access your super. You have options like taking a lump sum or setting up an income stream. I can send you information on accessing your super and the conditions of release.\nCustomer: Yes, please send that. I want to understand all my options.\nAgent: Absolutely. I'll email that to you now. Is there anything else I can help you with today?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, Ella. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL041",
+    "CUSTOMER_ID": "CUST041",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T12:25:00Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm Chloe Martinez. I'm calling about my super account.\nAgent: Good morning, Chloe. How can I help you? Can I get your member ID, please?\nCustomer: It's 90123456. I just wanted to check if my employer has made their last contribution.\nAgent: Certainly, Chloe. Let me check your account. Yes, I see a contribution from 'Global Corp' processed on July 8th. Is that what you were expecting?\nCustomer: Yes, that's it. Perfect. Thanks for checking.\nAgent: No problem at all. Is there anything else I can assist you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL042",
+    "CUSTOMER_ID": "CUST042",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T12:30:30Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Jack Robinson. I'm calling about my online access.\nAgent: Hello, Jack. Thanks for calling. Can you confirm your member ID, please?\nCustomer: It's 01234567.\nAgent: Got it. What's the issue with your online access?\nCustomer: I've forgotten my password, and the 'forgot password' link isn't sending me an email. I'm locked out.\nAgent: I apologize for the inconvenience, Jack. Let me try to manually trigger a password reset email for you. Please check your spam folder as well. If that doesn't work, we can set up a temporary password over the phone.\nCustomer: Okay, I'll check. It's really annoying when these things don't work.\nAgent: I understand. We're working to improve our systems. I've sent the email. Did you receive it?\nCustomer: (Pause) Yes, I got it! Thank you so much.\nAgent: Excellent! Glad I could help, Jack. Anything else?\nCustomer: No, that's it. Cheers."
+  },
+  {
+    "CALL_ID": "CALL043",
+    "CUSTOMER_ID": "CUST043",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T12:35:10Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Sophie Lewis. I'm calling about my investment strategy.\nAgent: Good afternoon, Sophie. I'm happy to help. Can I get your member ID to check your portfolio?\nCustomer: It's 12345678.\nAgent: Thank you. I see you're invested in our 'High Growth' option. What are your thoughts on your strategy?\nCustomer: I'm starting to feel a bit uncomfortable with the volatility. I'm thinking of moving to something more balanced. What are the implications?\nAgent: Moving to a 'Balanced' option would reduce your exposure to market fluctuations, but it also means potentially lower long-term returns. It's a trade-off between risk and reward. I can send you information on our 'Balanced' option and how it compares to your current fund.\nCustomer: Yes, please send that. I'm really worried about losing money.\nAgent: I'll email that to you now. We also offer free financial advice sessions if you'd like to discuss your options in more detail with an advisor. Would you be interested in that?\nCustomer: Yes, I think I need to talk to someone. It's stressing me out.\nAgent: I understand. I can transfer you to our advice team now to book an appointment. Please hold."
+  },
+  {
+    "CALL_ID": "CALL044",
+    "CUSTOMER_ID": "CUST044",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T12:40:00Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, my name is Leo Green. I want to discuss my insurance cover.\nAgent: Hello, Leo. Thanks for calling. Could you provide your member ID, please?\nCustomer: It's 23456789.\nAgent: Thank you, Leo. What about your insurance cover would you like to discuss?\nCustomer: I'm not sure if I have enough Death cover. I recently had a child, and I want to make sure my family is protected.\nAgent: Congratulations, Leo! That's a very responsible consideration. We offer options to increase your Death cover. It may require a health assessment depending on the amount. I can send you information on increasing your cover and a link to our online insurance needs calculator.\nCustomer: Yes, please send both. I want to make sure they're looked after.\nAgent: Absolutely. I'll email that to you now. Is there anything else I can help you with today?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, Leo. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL045",
+    "CUSTOMER_ID": "CUST045",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T12:45:30Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Mia Hall. I'm calling about my super balance.\nAgent: Hello, Mia. How can I assist you today? Can I get your member ID for verification?\nCustomer: It's 34567890. I just wanted to know my current balance and if there have been any recent large transactions.\nAgent: Certainly, Mia. Your current balance is $98,765.20. I see a large employer contribution processed last week. Is that what you were referring to?\nCustomer: Yes, that's it. I just wanted to confirm it went through. Thanks.\nAgent: No problem at all. Is there anything else I can assist you with today?\nCustomer: No, that's all for now. Thank you for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL046",
+    "CUSTOMER_ID": "CUST046",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T12:50:10Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Noah Adams. I'm calling about my online portal.\nAgent: Hi Noah. What seems to be the problem? Can I get your member ID?\nCustomer: It's 45678901. I can't seem to log in. It keeps saying 'account locked'.\nAgent: I apologize for the inconvenience, Noah. Your account might be locked due to multiple incorrect password attempts. I can unlock it for you and help you reset your password. Would you like me to do that now?\nCustomer: Yes, please. It's really frustrating when I can't access my account.\nAgent: I understand. I've just unlocked your account. I'll send a password reset link to your registered email address. Please check your spam folder if you don't see it immediately.\nCustomer: Okay, I'll check. Thanks for your help.\nAgent: No problem at all, Noah. We're here to help. Is there anything else?\nCustomer: No, that's it. Cheers."
+  },
+  {
+    "CALL_ID": "CALL047",
+    "CUSTOMER_ID": "CUST047",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T12:55:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Charlotte Wright. I have a question about my super contributions.\nAgent: Hello, Charlotte. What's your member ID, please?\nCustomer: It's 56789012.\nAgent: Thank you. What's your question about contributions?\nCustomer: I'm thinking of salary sacrificing into my super. How does that work, and what are the benefits?\nAgent: Salary sacrificing is where your employer pays a portion of your pre-tax salary directly into your super. It can be a tax-effective way to boost your super balance, as these contributions are generally taxed at 15% within super. I can send you a fact sheet on salary sacrificing.\nCustomer: That sounds interesting. Yes, please send that. I want to maximize my super.\nAgent: Absolutely. I'll email that to you now. Remember to check your concessional contribution caps. Is there anything else?\nCustomer: No, that's all. Thanks.\nAgent: You're welcome, Charlotte. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL048",
+    "CUSTOMER_ID": "CUST048",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T13:00:00Z",
+    "CALL_DURATION_SECONDS": 270,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, it's Elijah Turner. I'm calling about my investment performance.\nAgent: Good morning, Elijah. What's your member ID?\nCustomer: It's 67890123.\nAgent: Thanks. What about your investment performance are you concerned about?\nCustomer: I'm in the 'Ethical Growth' fund, and it seems to be lagging behind the general market. I'm a bit frustrated.\nAgent: I understand your concern, Elijah. Ethical funds can sometimes have different performance patterns compared to broader market indices due to their specific investment criteria. We recommend reviewing performance over a longer period. Would you like me to send you a detailed performance report for the 'Ethical Growth' fund?\nCustomer: Yes, please. I want to see the long-term trends.\nAgent: I'll email that to you shortly. Is there anything else?\nCustomer: No, that's fine. Thanks for the info.\nAgent: You're welcome, Elijah. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL049",
+    "CUSTOMER_ID": "CUST049",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T13:05:15Z",
+    "CALL_DURATION_SECONDS": 320,
+    "TRANSCRIPT_TEXT": "Customer: Hello, I'm Amelia Scott. I'm calling to update my employment status.\nAgent: Hi Amelia. What's your member ID, please?\nCustomer: It's 78901234.\nAgent: Thank you. What's your new employment status?\nCustomer: I've recently become self-employed, and I'm not sure how to continue making super contributions.\nAgent: Congratulations on your new venture, Amelia! As a self-employed individual, you can make personal super contributions. These can be tax-deductible up to certain limits. I can send you information on how to make personal contributions and the tax implications for self-employed individuals.\nCustomer: That would be very helpful. I want to make sure I'm still building my super.\nAgent: Absolutely. I'll email that to you now. Is there anything else I can help you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Amelia. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL050",
+    "CUSTOMER_ID": "CUST050",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T13:10:00Z",
+    "CALL_DURATION_SECONDS": 285,
+    "TRANSCRIPT_TEXT": "Customer: Hi, this is Benjamin Green. I have a question about my super account.\nAgent: Hello, Benjamin. What's your member ID?\nCustomer: It's 89012345.\nAgent: Thanks. What's your question?\nCustomer: I'm trying to find out if I have any lost super. I think I might have an old account somewhere.\nAgent: We can certainly help you check for lost super, Benjamin. You can do this through our online portal, or I can provide you with the ATO's lost super search tool details. Would you like me to send you the link to the ATO tool?\nCustomer: Yes, please send that. I'd like to track it down.\nAgent: I'll email that to you now. It's a good idea to consolidate any lost super into your main account to avoid multiple fees. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL051",
+    "CUSTOMER_ID": "CUST051",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T13:15:30Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm Mia Rodriguez. I'm calling about my super balance.\nAgent: Good morning, Mia. How can I help you? Can I get your member ID, please?\nCustomer: It's 90123456. I just wanted to know my current balance and if there's a way to get it higher faster.\nAgent: Certainly, Mia. Your current balance is $75,400.10. To potentially grow your super faster, you could consider increasing your contributions, either through salary sacrifice or personal contributions, or reviewing your investment option for a higher growth potential, keeping in mind the associated risks. Would you like information on these options?\nCustomer: Yes, please. I want to retire comfortably.\nAgent: My pleasure, Mia. I'll email you information on boosting your super and reviewing your investment options. Is there anything else I can assist you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL052",
+    "CUSTOMER_ID": "CUST052",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T13:20:10Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Oliver Perez. I'm calling about my super statement.\nAgent: Hello, Oliver. What's your member ID?\nCustomer: It's 01234567.\nAgent: Thanks. What about your statement?\nCustomer: I received my statement, but I think there's an error in my employer's contributions. It looks lower than it should be.\nAgent: I understand your concern, Oliver. Let me check your contribution history. I see the last contribution from 'Innovate Co' was $1,500. Is that what you're questioning?\nCustomer: Yes, it should be more. I think they've underpaid.\nAgent: If you believe there's an underpayment, you should first contact your employer to clarify. If it's still unresolved, we can assist you further. I can send you a record of your contributions for your reference.\nCustomer: Yes, please send that. I'm quite annoyed about this.\nAgent: I'll email that to you now. Is there anything else I can help you with today?\nCustomer: No, that's it. Cheers.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL053",
+    "CUSTOMER_ID": "CUST053",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T13:25:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Ava Nguyen. I have a question about my pension.\nAgent: Good afternoon, Ava. What's your member ID?\nCustomer: It's 12345678.\nAgent: Thank you. What's your question about your pension?\nCustomer: I'm thinking of starting an Account-Based Pension, but I'm not sure how much income I can draw. What are the minimum and maximum limits?\nAgent: The minimum annual payment for an Account-Based Pension is a percentage of your balance, which increases with age. There's no maximum payment limit once you've met a condition of release. I can send you a fact sheet on Account-Based Pensions and payment limits.\nCustomer: Yes, please send that. I want to understand how it works fully.\nAgent: Absolutely. I'll email that to you now. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: My pleasure, Ava. Have a lovely day."
+  },
+  {
+    "CALL_ID": "CALL054",
+    "CUSTOMER_ID": "CUST054",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T13:30:30Z",
+    "CALL_DURATION_SECONDS": 275,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm William Kim. I'm calling about my super account.\nAgent: Hello, William. What's your member ID?\nCustomer: It's 23456789.\nAgent: Thanks. What about your account?\nCustomer: I'm trying to update my tax file number, but the online form isn't working. It keeps giving me an error.\nAgent: I apologize for the technical issue, William. Let me check the system. It might be a temporary glitch. I can update your TFN for you over the phone, provided you can verify some details. Would you like to proceed with that?\nCustomer: Yes, please. I just want it updated.\nAgent: Certainly. Can you please confirm your full name and date of birth?\nCustomer: (Provides details). And my TFN is 123-456-789.\nAgent: Thank you. I've updated your TFN. You'll receive a confirmation email shortly. Is there anything else?\nCustomer: No, that's all for now. Thanks.\nAgent: You're welcome, William. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL055",
+    "CUSTOMER_ID": "CUST055",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T13:35:00Z",
+    "CALL_DURATION_SECONDS": 305,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, this is Sophia Brown. I have a question about my super.\nAgent: Good morning, Sophia. What's your member ID?\nCustomer: It's 34567890.\nAgent: Thank you. What's your question?\nCustomer: I'm thinking of moving my super to another fund. What's the process for that, and are there any exit fees?\nAgent: I understand you're considering other options, Sophia. To transfer your super, you'll typically need to contact the new fund, and they'll initiate the rollover. We don't charge exit fees, but there might be a small administration fee for processing the transfer. Would you like me to send you information on rollovers?\nCustomer: Yes, please send that. I'm quite unhappy with the recent performance of my fund.\nAgent: I'll email that to you now. I'd also like to offer you a free consultation with one of our financial advisors to discuss your concerns and see if we can address them. Would you be interested?\nCustomer: Maybe. Send the info first. Thanks.\nAgent: My pleasure, Sophia. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL056",
+    "CUSTOMER_ID": "CUST056",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T13:40:20Z",
+    "CALL_DURATION_SECONDS": 295,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Liam Jones. I'm calling about my super account.\nAgent: Hello, Liam. What's your member ID?\nCustomer: It's 45678901.\nAgent: Thanks. What about your account?\nCustomer: I just wanted to confirm my nominated beneficiaries. I can't seem to find it on my statement.\nAgent: Certainly, Liam. Your nominated beneficiaries are currently your spouse, Jane Jones, and your two children, Tom and Sarah. Is that correct?\nCustomer: Yes, that's right. Perfect. Thanks for confirming. I was worried it hadn't been updated.\nAgent: No problem at all. It's important to keep those details current. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Liam. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL057",
+    "CUSTOMER_ID": "CUST057",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T13:45:00Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Olivia Garcia. I'm calling about my super balance.\nAgent: Hi Olivia. How can I help you? Can I get your member ID, please?\nCustomer: It's 56789012. I just wanted to know my current balance and if I can access any of it early.\nAgent: Certainly, Olivia. Your current balance is $120,500.90. Regarding early access, superannuation is generally preserved until retirement, but there are very limited circumstances for early release, such as severe financial hardship or compassionate grounds. Do any of those apply to you?\nCustomer: I'm going through a tough time financially. What are the criteria for financial hardship?\nAgent: For financial hardship, you generally need to be receiving eligible government income support payments for a certain period and be unable to meet reasonable living expenses. I can send you information on the early release conditions and the application process. Is there anything else?\nCustomer: Yes, please send that. I'm really struggling.\nAgent: I understand. I'll email that to you now. Please note that early release is a last resort. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL058",
+    "CUSTOMER_ID": "CUST058",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T13:50:30Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Ethan Davis. I'm calling about my super contributions.\nAgent: Hello, Ethan. Thanks for calling. Can you confirm your member ID, please?\nCustomer: It's 67890123.\nAgent: Got it. What about your contributions?\nCustomer: I've started a second job, and I want to make sure my super contributions are going to the right fund.\nAgent: That's a good question, Ethan. You can provide your new employer with your super fund details, including our ABN and your member ID, to ensure contributions come to us. I can send you a pre-filled form with our details if that's easier.\nCustomer: Yes, please send that. I don't want to have multiple super accounts.\nAgent: I understand. I'll email that to you now. Is there anything else?\nCustomer: No, that's it. Cheers.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL059",
+    "CUSTOMER_ID": "CUST059",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T13:55:00Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Ava White. I'm calling about my investment options.\nAgent: Good afternoon, Ava. I'm happy to help. Can I get your member ID to check your portfolio?\nCustomer: It's 78901234.\nAgent: Thank you. I see you're invested in our 'Sustainable Future Portfolio'. What specifically would you like to discuss?\nCustomer: I'm happy with the ethical aspect, but I'm concerned about the returns. They seem a bit low compared to other options.\nAgent: I understand your concern, Ava. Ethical funds can sometimes prioritize specific criteria over maximizing short-term returns. However, they aim for strong long-term performance aligned with sustainable values. Would you like me to send you a detailed performance report for the 'Sustainable Future Portfolio' and information on its investment philosophy?\nCustomer: Yes, please send the report. I need to see if it's worth it.\nAgent: I'll email that to you now. We also offer free financial advice sessions if you'd like to discuss your options in more detail with an advisor. Would you be interested in that?\nCustomer: Maybe. Send the report first. Thanks.\nAgent: My pleasure, Ava. Is there anything else?\nCustomer: No, that's all. Bye."
+  },
+  {
+    "CALL_ID": "CALL060",
+    "CUSTOMER_ID": "CUST060",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T14:00:20Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, my name is Lucas Harris. I want to know about my insurance cover.\nAgent: Hello, Lucas. Thanks for calling. Could you provide your member ID, please?\nCustomer: It's 89012345.\nAgent: Thank you, Lucas. What about your insurance cover would you like to discuss?\nCustomer: I'm not sure if I have Income Protection insurance. Do I have it through my super?\nAgent: Let me check your policy. Yes, Lucas, you currently have Income Protection cover with us. It provides a regular income if you're temporarily unable to work due to illness or injury. Would you like me to send you the details of your Income Protection policy?\nCustomer: Yes, please send that. I want to understand what it covers.\nAgent: Absolutely. I'll email that to you now. Is there anything else I can help you with today?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, Lucas. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL061",
+    "CUSTOMER_ID": "CUST061",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T14:05:00Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, I'm Sophie Chen. I'm calling about my super account.\nAgent: Good morning, Sophie. How can I help you? Can I get your member ID, please?\nCustomer: It's 90123456. I just wanted to check my current investment option.\nAgent: Certainly, Sophie. Your current investment option is 'Balanced Growth'. Is that what you were expecting?\nCustomer: Yes, that's right. Perfect. Thanks for confirming.\nAgent: No problem at all. Is there anything else I can assist you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL062",
+    "CUSTOMER_ID": "CUST062",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T14:10:30Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Ben Lee. I'm calling about my super contributions.\nAgent: Hello, Ben. Thanks for calling. Can you confirm your member ID, please?\nCustomer: It's 01234567.\nAgent: Got it. What about your contributions?\nCustomer: I've just started a new job, and I want to make sure my super contributions are directed to TelstraSuper.\nAgent: That's great, Ben. You'll need to provide your new employer with our fund details, including our ABN and your member ID. I can email you a 'Choice of Super Fund' form that you can give to them.\nCustomer: Yes, please send that. I want to make sure it's all set up correctly.\nAgent: I understand. I'll email that to you now. Is there anything else?\nCustomer: No, that's it. Cheers.\nAgent: You're welcome. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL063",
+    "CUSTOMER_ID": "CUST063",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T14:15:00Z",
+    "CALL_DURATION_SECONDS": 315,
+    "TRANSCRIPT_TEXT": "Customer: Good afternoon, this is Chloe Garcia. I'm calling about my investment performance.\nAgent: Good afternoon, Chloe. I'm happy to help. Can I get your member ID to check your portfolio?\nCustomer: It's 12345678.\nAgent: Thank you. I see you're invested in our 'Growth Plus' option. What are your concerns about its performance?\nCustomer: I'm really worried about the recent market downturns. My balance has dropped significantly. I'm thinking of moving to a safer option, even if it means lower returns.\nAgent: I understand your concern, Chloe. Market downturns can be unsettling. While the 'Growth Plus' option is designed for long-term growth, it does experience short-term fluctuations. Moving to a 'Capital Stable' or 'Cash' option would reduce volatility, but it's important to consider your long-term goals and inflation. Would you like me to send you information on our lower-risk options?\nCustomer: Yes, please send that. I'm losing sleep over this.\nAgent: I'll email that to you now. We also offer free financial advice sessions if you'd like to discuss your options in more detail with an advisor. Would you be interested in that?\nCustomer: Yes, I think I need to talk to someone. This is too much.\nAgent: I understand. I can transfer you to our advice team now to book an appointment. Please hold."
+  },
+  {
+    "CALL_ID": "CALL064",
+    "CUSTOMER_ID": "CUST064",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T14:20:20Z",
+    "CALL_DURATION_SECONDS": 290,
+    "TRANSCRIPT_TEXT": "Customer: Hi, my name is Jack Smith. I want to update my contact details.\nAgent: Hello, Jack. Thanks for calling. Could you provide your member ID, please?\nCustomer: It's 23456789.\nAgent: Thank you, Jack. What details would you like to update?\nCustomer: I've changed my mobile number. And I want to add an alternative email address.\nAgent: No problem. Can you please provide your new mobile number and the alternative email address?\nCustomer: (Provides new details). Also, I'm having trouble updating these myself on the online portal. It's not very user-friendly.\nAgent: I apologize for the inconvenience. I've updated your mobile number and added the alternative email address for you. We're constantly working to improve our digital experience. Is there anything else I can help you with today?\nCustomer: No, that's perfect. Thank you.\nAgent: You're welcome, Jack. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL065",
+    "CUSTOMER_ID": "CUST065",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T14:25:00Z",
+    "CALL_DURATION_SECONDS": 300,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Grace White. I'm calling about my super balance and retirement.\nAgent: Hello, Grace. How can I assist you today? Can I get your member ID for verification?\nCustomer: It's 34567890. I'm 60 and thinking about what my super will look like when I retire. Can I get a projection?\nAgent: Certainly, Grace. We can provide a retirement projection based on your current balance, contributions, and investment strategy. It's a good way to see if you're on track. Would you like me to generate a basic projection for you now, or would you prefer a more detailed one with an advisor?\nCustomer: A basic one for now would be good. Just to get an idea.\nAgent: Okay, I'll run that for you. It will be an estimate based on standard assumptions. I'll email the projection to you within the next hour. Is there anything else?\nCustomer: No, that's all for now. Thank you for your help.\nAgent: You're welcome. Have a great day."
+  },
+  {
+    "CALL_ID": "CALL066",
+    "CUSTOMER_ID": "CUST066",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T14:30:30Z",
+    "CALL_DURATION_SECONDS": 280,
+    "TRANSCRIPT_TEXT": "Customer: Hello, this is Samuel King. I'm calling about my online statements.\nAgent: Hi Samuel. What seems to be the problem? Can I get your member ID?\nCustomer: It's 45678901. I can't seem to download my statements from the portal. The PDF link isn't working.\nAgent: I apologize for the technical issue, Samuel. Let me check the system. It might be a temporary glitch. Have you tried on a different device or browser?\nCustomer: Yes, I tried on my phone and my laptop. Same problem. It's really frustrating when I can't access my own documents.\nAgent: I understand. I'll escalate this to our IT team immediately. In the meantime, I can email you copies of your last few statements directly. Would that be helpful?\nCustomer: Yes, please. That would be great. Thanks.\nAgent: No problem at all, Samuel. We're here to help. Is there anything else?\nCustomer: No, that's it. Cheers."
+  },
+  {
+    "CALL_ID": "CALL067",
+    "CUSTOMER_ID": "CUST067",
+    "AGENT_ID": "AGENT003",
+    "CALL_TIMESTAMP": "2025-07-10T14:35:10Z",
+    "CALL_DURATION_SECONDS": 310,
+    "TRANSCRIPT_TEXT": "Customer: Hi, I'm Lily Green. I have a question about my insurance premiums.\nAgent: Hello, Lily. What's your member ID, please?\nCustomer: It's 56789012.\nAgent: Thank you. What's your question about your insurance premiums?\nCustomer: My premiums seem to have gone up quite a bit. Can you explain why?\nAgent: Let me check your policy details. Insurance premiums can increase due to age, changes in your cover, or adjustments to the insurer's rates. I see a slight increase due to your age bracket. Would you like me to send you a detailed breakdown of your premiums and the factors affecting them?\nCustomer: Yes, please. I just want to understand it fully. It feels like a lot.\nAgent: I'll email that to you now. We also offer options to adjust your cover if you wish to manage your premiums. Is there anything else?\nCustomer: No, that's all. Thanks.\nAgent: You're welcome, Lily. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL068",
+    "CUSTOMER_ID": "CUST068",
+    "AGENT_ID": "AGENT004",
+    "CALL_TIMESTAMP": "2025-07-10T14:40:00Z",
+    "CALL_DURATION_SECONDS": 270,
+    "TRANSCRIPT_TEXT": "Customer: Good morning, it's Oliver Hall. I'm calling about my investment choice.\nAgent: Good morning, Oliver. What's your member ID?\nCustomer: It's 67890123.\nAgent: Thanks. What about your investment choice would you like to discuss?\nCustomer: I'm in the 'Balanced' option, but I'm thinking of moving to something more aggressive. What are the risks involved?\nAgent: Moving to a more aggressive option, like our 'High Growth' fund, means potentially higher returns but also higher volatility and risk of capital loss. It's important to ensure it aligns with your risk tolerance and time horizon. I can send you information on our different investment options and their risk profiles.\nCustomer: Yes, please send that. I want to make an informed decision.\nAgent: Absolutely. I'll email that to you shortly. Is there anything else?\nCustomer: No, that's fine. Thanks for the info.\nAgent: You're welcome, Oliver. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL069",
+    "CUSTOMER_ID": "CUST069",
+    "AGENT_ID": "AGENT001",
+    "CALL_TIMESTAMP": "2025-07-10T14:45:15Z",
+    "CALL_DURATION_SECONDS": 320,
+    "TRANSCRIPT_TEXT": "Customer: Hello, I'm Isabella Baker. I'm calling to update my personal details.\nAgent: Hi Isabella. What's your member ID, please?\nCustomer: It's 78901234.\nAgent: Thank you. What details would you like to update?\nCustomer: I've changed my name after marriage, and I need to update my surname. Also, my email address has changed.\nAgent: Congratulations, Isabella! I can update your email address for you now. For a name change, we'll require a certified copy of your marriage certificate or change of name certificate for security purposes. I can email you the form and instructions on how to submit the document.\nCustomer: Oh, that's a bit of a hassle. Can't I just tell you over the phone?\nAgent: Unfortunately, for security and compliance reasons, we need the certified document for name changes. I apologize for the inconvenience. I've sent the email with instructions. Is there anything else I can help you with today?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome, Isabella. Have a good day."
+  },
+  {
+    "CALL_ID": "CALL070",
+    "CUSTOMER_ID": "CUST070",
+    "AGENT_ID": "AGENT002",
+    "CALL_TIMESTAMP": "2025-07-10T14:50:00Z",
+    "CALL_DURATION_SECONDS": 285,
+    "TRANSCRIPT_TEXT": "Customer: Hi, this is Mason Scott. I have a question about my super fund's performance.\nAgent: Hello, Mason. What's your member ID?\nCustomer: It's 89012345.\nAgent: Thanks. What's your question about performance?\nCustomer: I'm just generally concerned about the market. Is my super safe? I'm thinking of moving it to a cash option.\nAgent: I understand your concern about market volatility, Mason. Our funds are diversified to manage risk. Moving to a cash option might protect against short-term market dips, but it could also mean missing out on long-term growth and may not keep pace with inflation. Would you like me to send you information on our 'Capital Stable' option, which has a higher allocation to cash and fixed interest?\nCustomer: Yes, please send that. I'm feeling very nervous about my investments.\nAgent: I'll email that to you now. Remember, it's important to consider your long-term financial goals. Is there anything else?\nCustomer: No, that's all. Thanks for your help.\nAgent: You're welcome. Have a good day."
+  }
+]

@@ -1,189 +1,164 @@
 -- ============================================================================
 -- Superannuation Transcripts Demo - Database Objects Creation
 -- ============================================================================
--- This script creates all the required database objects for the demo
--- Run this script in your Snowflake account: demo_sweingartner
+-- This script creates the base database, schema, and table structure
+-- for the superannuation transcripts demo
 -- ============================================================================
 
--- Create the main database
-CREATE DATABASE IF NOT EXISTS SUPERANNUATION
-COMMENT = 'Database for Superannuation Fund call transcript analysis demo';
-
--- Use the database
+-- Create database and schema
+CREATE DATABASE IF NOT EXISTS SUPERANNUATION;
 USE DATABASE SUPERANNUATION;
 
--- Create the transcripts schema
-CREATE SCHEMA IF NOT EXISTS TRANSCRIPTS
-COMMENT = 'Schema containing call transcript data and AI analysis results';
-
--- Use the schema
+CREATE SCHEMA IF NOT EXISTS TRANSCRIPTS;
 USE SCHEMA TRANSCRIPTS;
 
--- Create the stage for data loading
-CREATE STAGE IF NOT EXISTS TRANSCRIPTS
-COMMENT = 'Stage for loading call transcript JSON files';
-
--- Use the warehouse (assuming MYWH already exists)
+-- Set warehouse
 USE WAREHOUSE MYWH;
 
 -- ============================================================================
--- Create Raw Data Tables
+-- Core Data Tables
 -- ============================================================================
 
 -- Raw call transcripts table
 CREATE TABLE IF NOT EXISTS RAW_CALL_TRANSCRIPTS (
-    CALL_ID VARCHAR(50) PRIMARY KEY,
-    CUSTOMER_ID VARCHAR(50) NOT NULL,
-    AGENT_ID VARCHAR(50),
-    CALL_TIMESTAMP TIMESTAMP,
+    CALL_ID VARCHAR(20) PRIMARY KEY,
+    CUSTOMER_ID VARCHAR(20) NOT NULL,
+    AGENT_ID VARCHAR(20),
+    CALL_TIMESTAMP TIMESTAMP_NTZ,
     CALL_DURATION_SECONDS INTEGER,
     TRANSCRIPT_TEXT TEXT,
-    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    UPDATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
-) COMMENT = 'Raw call transcript data loaded from JSON files';
+    CREATED_AT TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
 
 -- Customer master data table
 CREATE TABLE IF NOT EXISTS CUSTOMER (
-    CUSTOMER_ID VARCHAR(50) PRIMARY KEY,
+    CUSTOMER_ID VARCHAR(20) PRIMARY KEY,
     CUSTOMER_NAME VARCHAR(100),
     AGE INTEGER,
     TENURE_YEARS INTEGER,
-    ACCOUNT_BALANCE DECIMAL(18,2),
+    ACCOUNT_BALANCE DECIMAL(15,2),
     INVESTMENT_OPTION VARCHAR(50),
     RECENT_TRANSACTIONS INTEGER,
     LAST_INTERACTION_DATE DATE,
-    PRODUCT_HOLDINGS VARIANT, -- JSON array of products
+    PRODUCT_HOLDINGS VARIANT,
     CONTACT_PREFERENCE VARCHAR(20),
-    CALL_FREQUENCY_LAST_MONTH INTEGER DEFAULT 0,
-    AVG_SENTIMENT_LAST_3_CALLS DECIMAL(5,2) DEFAULT 0.0,
-    NUM_NEGATIVE_CALLS_LAST_6_MONTHS INTEGER DEFAULT 0,
-    HAS_CHURN_INTENT_LAST_MONTH BOOLEAN DEFAULT FALSE,
-    CHURN_RISK_SCORE VARCHAR(10) DEFAULT 'Low',
-    CHURN_PROBABILITY DECIMAL(3,2) DEFAULT 0.00,
+    CALL_FREQUENCY_LAST_MONTH INTEGER,
+    AVG_SENTIMENT_LAST_3_CALLS DECIMAL(5,2),
+    NUM_NEGATIVE_CALLS_LAST_6_MONTHS INTEGER,
+    HAS_CHURN_INTENT_LAST_MONTH BOOLEAN,
+    CHURN_RISK_SCORE VARCHAR(10),
+    CHURN_PROBABILITY DECIMAL(5,2),
     NEXT_BEST_ACTION TEXT,
-    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    UPDATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
-) COMMENT = 'Customer master data with AI-derived insights';
+    CREATED_AT TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP(),
+    UPDATED_AT TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
 
--- ============================================================================
--- Create Enriched Data Tables
--- ============================================================================
-
--- Enriched transcripts for all historical data
+-- Enriched transcripts table (AI-processed data)
 CREATE TABLE IF NOT EXISTS ENRICHED_TRANSCRIPTS_ALL (
-    CALL_ID VARCHAR(50) PRIMARY KEY,
-    CUSTOMER_ID VARCHAR(50) NOT NULL,
-    CALL_TIMESTAMP TIMESTAMP,
-    TRANSCRIPT_TEXT TEXT,
+    CALL_ID VARCHAR(20) PRIMARY KEY,
+    CUSTOMER_ID VARCHAR(20) NOT NULL,
+    CALL_TIMESTAMP TIMESTAMP_NTZ,
     SENTIMENT_SCORE DECIMAL(5,2),
     SENTIMENT_LABEL VARCHAR(20),
-    PRIMARY_INTENT VARCHAR(100),
+    PRIMARY_INTENT VARCHAR(50),
     CALL_SUMMARY TEXT,
-    KEY_TOPICS VARIANT, -- JSON array of topics
-    CONFIDENCE_SCORE DECIMAL(3,2),
-    PROCESSING_TIMESTAMP TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    FOREIGN KEY (CALL_ID) REFERENCES RAW_CALL_TRANSCRIPTS(CALL_ID)
-) COMMENT = 'All call transcripts enriched with AI analysis - used for manager dashboard';
-
--- Enriched transcripts for real-time demo simulation
-CREATE TABLE IF NOT EXISTS ENRICHED_TRANSCRIPTS_REALTIME (
-    CALL_ID VARCHAR(50) PRIMARY KEY,
-    CUSTOMER_ID VARCHAR(50) NOT NULL,
-    CALL_TIMESTAMP TIMESTAMP,
-    TRANSCRIPT_TEXT TEXT,
-    SENTIMENT_SCORE DECIMAL(5,2),
-    SENTIMENT_LABEL VARCHAR(20),
-    PRIMARY_INTENT VARCHAR(100),
-    CALL_SUMMARY TEXT,
-    KEY_TOPICS VARIANT, -- JSON array of topics
-    CONFIDENCE_SCORE DECIMAL(3,2),
-    PROCESSING_TIMESTAMP TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP(),
-    FOREIGN KEY (CALL_ID) REFERENCES RAW_CALL_TRANSCRIPTS(CALL_ID)
-) COMMENT = 'Real-time transcript processing results - cleared and populated during demo';
+    NEXT_BEST_ACTION TEXT,
+    CHURN_RISK_SCORE VARCHAR(10),
+    CHURN_PROBABILITY DECIMAL(5,2),
+    CREATED_AT TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP(),
+    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMER(CUSTOMER_ID)
+);
 
 -- ============================================================================
--- Create Views for Common Queries
+-- Business Intelligence Tables
 -- ============================================================================
 
--- View combining customer data with latest call sentiment
-CREATE OR REPLACE VIEW CUSTOMER_INSIGHTS AS
-SELECT 
-    c.*,
-    et.SENTIMENT_SCORE as LATEST_SENTIMENT_SCORE,
-    et.SENTIMENT_LABEL as LATEST_SENTIMENT_LABEL,
-    et.PRIMARY_INTENT as LATEST_PRIMARY_INTENT,
-    et.CALL_SUMMARY as LATEST_CALL_SUMMARY,
-    et.CALL_TIMESTAMP as LATEST_CALL_TIMESTAMP
-FROM CUSTOMER c
-LEFT JOIN (
-    SELECT 
-        CUSTOMER_ID,
-        SENTIMENT_SCORE,
-        SENTIMENT_LABEL,
-        PRIMARY_INTENT,
-        CALL_SUMMARY,
-        CALL_TIMESTAMP,
-        ROW_NUMBER() OVER (PARTITION BY CUSTOMER_ID ORDER BY CALL_TIMESTAMP DESC) as rn
-    FROM ENRICHED_TRANSCRIPTS_ALL
-) et ON c.CUSTOMER_ID = et.CUSTOMER_ID AND et.rn = 1;
+-- Customer 360 view table
+CREATE TABLE IF NOT EXISTS CUSTOMER_360_VIEW (
+    CUSTOMER_ID VARCHAR(20) PRIMARY KEY,
+    CUSTOMER_NAME VARCHAR(100),
+    AGE INTEGER,
+    TENURE_YEARS INTEGER,
+    ACCOUNT_BALANCE DECIMAL(15,2),
+    INVESTMENT_OPTION VARCHAR(50),
+    RECENT_CALL_COUNT INTEGER,
+    LAST_CALL_DATE DATE,
+    AVG_SENTIMENT_SCORE DECIMAL(5,2),
+    PRIMARY_INTENT VARCHAR(50),
+    CHURN_RISK_SCORE VARCHAR(10),
+    CHURN_PROBABILITY DECIMAL(5,2),
+    NEXT_BEST_ACTION TEXT,
+    PRODUCT_HOLDINGS VARIANT,
+    CONTACT_PREFERENCE VARCHAR(20),
+    UPDATED_AT TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
 
--- View for manager dashboard metrics
-CREATE OR REPLACE VIEW DASHBOARD_METRICS AS
-SELECT 
-    -- Sentiment distribution
-    COUNT(*) as TOTAL_CALLS,
-    AVG(SENTIMENT_SCORE) as AVG_SENTIMENT,
-    COUNT(CASE WHEN SENTIMENT_LABEL = 'Positive' THEN 1 END) as POSITIVE_CALLS,
-    COUNT(CASE WHEN SENTIMENT_LABEL = 'Negative' THEN 1 END) as NEGATIVE_CALLS,
-    COUNT(CASE WHEN SENTIMENT_LABEL = 'Neutral' THEN 1 END) as NEUTRAL_CALLS,
-    
-    -- Churn risk distribution
-    COUNT(CASE WHEN c.CHURN_RISK_SCORE = 'High' THEN 1 END) as HIGH_CHURN_RISK,
-    COUNT(CASE WHEN c.CHURN_RISK_SCORE = 'Medium' THEN 1 END) as MEDIUM_CHURN_RISK,
-    COUNT(CASE WHEN c.CHURN_RISK_SCORE = 'Low' THEN 1 END) as LOW_CHURN_RISK,
-    
-    -- Date range for context
-    MIN(CALL_TIMESTAMP) as EARLIEST_CALL,
-    MAX(CALL_TIMESTAMP) as LATEST_CALL
-FROM ENRICHED_TRANSCRIPTS_ALL e
-LEFT JOIN CUSTOMER c ON e.CUSTOMER_ID = c.CUSTOMER_ID;
+-- Customer analytics table
+CREATE TABLE IF NOT EXISTS CUSTOMER_ANALYTICS (
+    CUSTOMER_ID VARCHAR(20) PRIMARY KEY,
+    TOTAL_CALLS INTEGER,
+    AVG_CALL_DURATION INTEGER,
+    AVG_SENTIMENT_SCORE DECIMAL(5,2),
+    COMPLAINT_COUNT INTEGER,
+    UPSELL_OPPORTUNITIES INTEGER,
+    CHURN_RISK_SCORE VARCHAR(10),
+    CHURN_PROBABILITY DECIMAL(5,2),
+    LAST_UPDATED TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
+
+-- Manager dashboard metrics table
+CREATE TABLE IF NOT EXISTS DASHBOARD_METRICS (
+    METRIC_DATE DATE PRIMARY KEY,
+    TOTAL_CALLS INTEGER,
+    TOTAL_CUSTOMERS INTEGER,
+    AVG_SENTIMENT_SCORE DECIMAL(5,2),
+    HIGH_CHURN_CUSTOMERS INTEGER,
+    MEDIUM_CHURN_CUSTOMERS INTEGER,
+    LOW_CHURN_CUSTOMERS INTEGER,
+    COMPLAINT_CALLS INTEGER,
+    UPSELL_OPPORTUNITIES INTEGER,
+    CREATED_AT TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+);
 
 -- ============================================================================
--- Create Indexes for Performance
+-- Performance Optimization
 -- ============================================================================
 
--- Note: Snowflake handles indexing automatically, but we can create clustering keys
--- for better performance on frequently queried columns
-
--- Cluster by customer_id for customer-specific queries
-ALTER TABLE RAW_CALL_TRANSCRIPTS CLUSTER BY (CUSTOMER_ID);
+-- Add clustering keys for better performance
+ALTER TABLE RAW_CALL_TRANSCRIPTS CLUSTER BY (CUSTOMER_ID, CALL_TIMESTAMP);
+ALTER TABLE CUSTOMER CLUSTER BY (CUSTOMER_ID);
 ALTER TABLE ENRICHED_TRANSCRIPTS_ALL CLUSTER BY (CUSTOMER_ID);
-ALTER TABLE ENRICHED_TRANSCRIPTS_REALTIME CLUSTER BY (CUSTOMER_ID);
+ALTER TABLE CUSTOMER_360_VIEW CLUSTER BY (CUSTOMER_ID);
+ALTER TABLE CUSTOMER_ANALYTICS CLUSTER BY (CUSTOMER_ID);
+ALTER TABLE DASHBOARD_METRICS CLUSTER BY (METRIC_DATE);
 
 -- ============================================================================
--- Grant Permissions (if needed)
+-- Validation
 -- ============================================================================
 
--- Grant usage on database and schema to current role
-GRANT USAGE ON DATABASE SUPERANNUATION TO ROLE ACCOUNTADMIN;
-GRANT USAGE ON SCHEMA TRANSCRIPTS TO ROLE ACCOUNTADMIN;
-GRANT ALL ON ALL TABLES IN SCHEMA TRANSCRIPTS TO ROLE ACCOUNTADMIN;
-GRANT ALL ON ALL VIEWS IN SCHEMA TRANSCRIPTS TO ROLE ACCOUNTADMIN;
-
--- ============================================================================
--- Verification Queries
--- ============================================================================
-
--- Verify all objects were created successfully
+-- Show created tables
 SHOW TABLES;
-SHOW VIEWS;
-SHOW STAGES;
 
--- Check table structures
-DESCRIBE TABLE RAW_CALL_TRANSCRIPTS;
-DESCRIBE TABLE CUSTOMER;
-DESCRIBE TABLE ENRICHED_TRANSCRIPTS_ALL;
+-- Display table structure summary
+SELECT 
+    'Database objects created successfully!' as STATUS,
+    COUNT(*) as TOTAL_TABLES
+FROM INFORMATION_SCHEMA.TABLES 
+WHERE TABLE_SCHEMA = 'TRANSCRIPTS';
 
-SELECT 'Database objects created successfully' as STATUS; 
+-- ============================================================================
+-- Data Ingestion Stage
+-- ============================================================================
+
+-- Create internal stage for data loading
+CREATE STAGE IF NOT EXISTS TRANSCRIPTS
+    FILE_FORMAT = (
+        TYPE = 'JSON'
+        STRIP_OUTER_ARRAY = TRUE
+        DATE_FORMAT = 'AUTO'
+        TIMESTAMP_FORMAT = 'AUTO'
+    )
+    COMMENT = 'Stage for loading call transcript JSON files';
+
+-- Display stage information
+DESCRIBE STAGE TRANSCRIPTS; 

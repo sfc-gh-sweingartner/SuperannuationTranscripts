@@ -1,207 +1,154 @@
 # Superannuation Transcripts Demo
 
-A demonstration application showing how Snowflake can leverage customer call transcripts for churn prediction and personalized engagement at a Superannuation Fund.
+## Project Overview
 
-## 🎯 Demo Overview
+This demo showcases how a superannuation fund can leverage customer call transcripts for churn prediction and personalized engagement using Snowflake's integrated AI/ML platform. The solution demonstrates a **Hybrid AI + ML approach** that combines real-time AI processing with machine learning models to transform reactive customer service into proactive, data-driven member engagement.
 
-This demo showcases:
-- **AI-powered transcript analysis** using Snowflake Cortex AI
-- **Churn prediction** based on call sentiment and patterns
-- **Personalized Next Best Actions** for customer engagement
-- **Dual deployment** (local development + Streamlit in Snowflake)
-- **Real-time processing simulation** for live demos
+## 🎯 Key Features
 
-## 🏗️ Architecture
+- **AI-Powered Transcript Analysis**: Sentiment analysis, intent detection, and call summarization
+- **ML-Driven Churn Prediction**: Risk scoring and confidence metrics
+- **Personalized Engagement**: AI-generated Next Best Actions (NBA)
+- **Real-time Processing**: Simulated live transcript analysis
+- **Multi-View Dashboard**: Advisor and manager perspectives
+- **Modern UI/UX**: Streamlit-based interface with rich visualizations
 
-- **Database**: Snowflake (SUPERANNUATION.TRANSCRIPTS)
-- **AI Processing**: Snowflake Cortex AI (Claude-4-Sonnet, sentiment analysis)
-- **Frontend**: Streamlit (local + Snowflake hosted)
-- **Connection**: Dual-environment pattern (local config + Snowpark)
+## 📋 Application Structure
 
-## 📋 Prerequisites
+The demo includes 7 pages:
 
-### Snowflake Account
-- Account: `demo_sweingartner`
-- Warehouse: `MYWH` (should already exist)
-- Required privileges: CREATE DATABASE, USE WAREHOUSE, CORTEX AI access
+1. **📊 Data Foundation** - Database setup and data overview
+2. **🤖 AI Processing Demo** - Real-time transcript analysis simulation
+3. **👨‍💼 Advisor View** - Individual customer insights and recommendations
+4. **📈 Manager Dashboard** - Aggregate insights and performance metrics
+5. **🔬 ML Model Performance** - Model metrics and technical details
+6. **❓ Demo Guide** - Instructions for presenting the solution
+7. **📋 Solution Design** - Technical architecture and implementation status
 
-### Local Development
+## 🚀 Quick Start
+
+### Prerequisites
 - Python 3.8+
-- Snowflake CLI or SnowSQL
-- Local Snowflake connection configured
+- Snowflake account with appropriate permissions
+- Configuration file at `~/.snowflake/config.toml`
 
-### Python Dependencies
+### Installation
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🚀 Phase 1 Setup (Foundation)
-
-### Step 1: Create Database Objects
-```sql
--- Run this in your Snowflake account
-@sql/01_create_database_objects.sql
-```
-
-### Step 2: Load Call Transcript Data
+### Running the Demo
 ```bash
-# Upload the JSON file to Snowflake stage
-snowsql -f sql/02_load_call_transcripts.sql
-
-# Or use PUT command in SnowSQL:
-PUT file:///path/to/call_transcripts.json @SUPERANNUATION.TRANSCRIPTS.TRANSCRIPTS;
+streamlit run src/streamlit_main.py
 ```
 
-### Step 3: Create Customer Data
-```sql
--- Run this to create synthetic customer data
-@sql/03_create_customer_data.sql
-```
+## 🏗️ Technical Architecture
 
-### Step 4: Test the Setup
-```bash
-# Run the test suite
-streamlit run tests/test_connection.py
-```
+### Platform Stack
+- **Database**: Snowflake (SUPERANNUATION.TRANSCRIPTS schema)
+- **AI Engine**: Snowflake Cortex AI (claude-4-sonnet)
+- **ML Framework**: SNOWFLAKE.ML.CLASSIFICATION
+- **Frontend**: Streamlit (local + Snowflake hosted)
+- **Connection**: snowflake.connector + tomli config
 
-## 🗄️ Database Schema
+### Data Flow
+1. **Ingestion**: JSON transcripts → Snowflake tables
+2. **AI Processing**: Cortex AI analysis (sentiment, intent, summarization)
+3. **ML Processing**: Churn prediction models
+4. **Personalization**: AI-generated recommendations
+5. **Visualization**: Interactive dashboards
 
-### Core Tables
-- **RAW_CALL_TRANSCRIPTS**: Original call transcript data
-- **CUSTOMER**: Customer master data with AI-derived insights
-- **ENRICHED_TRANSCRIPTS_ALL**: Historical AI-processed transcripts
-- **ENRICHED_TRANSCRIPTS_REALTIME**: Real-time demo processing table
+## 📊 Implementation Status
 
-### Key Views
-- **CUSTOMER_INSIGHTS**: Combined customer and latest call data
-- **DASHBOARD_METRICS**: Aggregated metrics for manager dashboard
-- **DATA_QUALITY_REPORT**: Data quality monitoring
+### ✅ Fully Implemented
+- Snowflake connection and database schema
+- Data loading and management scripts
+- Multi-page Streamlit application
+- Interactive visualizations and charts
+- Demo scenarios with fallback data
 
-## 🔧 Configuration
+### ⚠️ Simulated Components
+- AI functions (AI_CLASSIFY, AI_AGG, AI_COMPLETE)
+- ML model training (SNOWFLAKE.ML.CLASSIFICATION)
+- Churn predictions (rule-based scoring)
+- NBA generation (template-based responses)
 
-### Local Development
-Set up your local Snowflake connection in `~/.snowflake/config.toml`:
-```toml
-default_connection_name = "demo_sweingartner"
+### 🔮 Future Development
+- Production AI/ML integration
+- Real-time streaming connections
+- Enterprise CRM integration
+- Advanced security and compliance
 
-[connections.demo_sweingartner]
-account = "demo_sweingartner"
-user = "your_username"
-password = "your_password"
-# or use other auth methods like SSO
-```
-
-### Streamlit in Snowflake
-No additional configuration needed - uses active Snowpark session.
-
-## 🎭 Demo Scenarios
-
-### High Churn Risk Customers
-- **CUST003**: Maria Garcia - Technical issues, frustrated
-- **CUST010**: Robert Wilson - Fee concerns, considering leaving
-- **CUST015**: Jennifer Brown - Multiple complaints, high call frequency
-
-### Upsell Opportunities
-- **CUST004**: John Smith - Interested in ESG investing
-- **CUST007**: Emma Thompson - High-value customer, positive sentiment
-- **CUST012**: David Liu - Sustainable investing focus
-
-### Retirement Planning
-- **CUST005**: Emily White - Age 64, planning retirement
-- **CUST008**: Peter Johnson - Age 59, pre-retirement planning
-
-## 📁 File Structure
+## 📁 Project Structure
 
 ```
 SuperannuationTranscripts/
+├── src/
+│   ├── streamlit_main.py          # Main application
+│   ├── connection_helper.py       # Snowflake connection utilities
+│   └── pages/                     # Individual demo pages
+├── scripts/                       # Data loading and setup scripts
 ├── sql/                          # Database setup scripts
-│   ├── 01_create_database_objects.sql
-│   ├── 02_load_call_transcripts.sql
-│   └── 03_create_customer_data.sql
-├── src/                          # Python source code
-│   └── connection_helper.py      # Dual-environment connection
-├── tests/                        # Test scripts
-│   └── test_connection.py        # Phase 1 validation
-├── .cursor/                      # Cursor rules and documentation
-├── call_transcripts.json         # Sample call transcript data
-└── README.md                     # This file
+├── TRASH/                        # Obsolete files (post-testing cleanup)
+├── Reference/                    # Design documents and examples
+└── requirements.txt              # Python dependencies
 ```
 
-## ✅ Phase 1 Success Criteria
+## 🎭 Demo Scenarios
 
-- [ ] All database objects created successfully
-- [ ] Call transcript data loaded (100 records)
-- [ ] Customer data created (25 customers)
-- [ ] Connection helper works in both environments
-- [ ] Test suite passes all tests
-- [ ] Demo scenarios are ready
+### High-Risk Customer (Maria Garcia)
+- 78% churn probability
+- Recent negative sentiment
+- NBA: Urgent senior advisor intervention
 
-## 🔍 Testing
+### Growth Opportunity (John Smith)
+- 18% churn probability
+- Interest in ESG investing
+- NBA: Personalized ESG portfolio consultation
 
-Run the comprehensive test suite:
-```bash
-streamlit run tests/test_connection.py
+### Real-time Processing
+- Button-triggered analysis
+- Instant AI insights
+- Live recommendation generation
+
+## 🔧 Configuration
+
+Create `~/.snowflake/config.toml`:
+```toml
+[default]
+account = "your_account"
+user = "your_username"
+password = "your_password"
+warehouse = "MYWH"
+database = "SUPERANNUATION"
+schema = "TRANSCRIPTS"
 ```
 
-The test suite validates:
-- Snowflake connection (local + hosted)
-- Database objects creation
-- Data loading completeness
-- Sample queries functionality
-- Demo scenarios readiness
+## 📈 Business Value
 
-## 📊 Data Quality
+### Immediate Demo Value
+- Proof of concept for AI/ML-driven engagement
+- Professional UI for stakeholder presentations
+- Integration pattern demonstration
 
-The demo includes built-in data quality monitoring:
-- **Record counts**: Validate data loading
-- **Data completeness**: Check for missing fields
-- **Relationship integrity**: Verify FK relationships
-- **Demo scenarios**: Ensure predictable outcomes
+### Production Potential
+- 15-25% churn reduction through proactive intervention
+- Improved member satisfaction via personalization
+- Operational efficiency gains
+- Revenue growth through better retention
 
-## 🚧 Next Phases
+## 🔗 Links
 
-- **Phase 2**: AI Processing Implementation
-- **Phase 3**: Business Logic Development
-- **Phase 4**: Frontend Development
-- **Phase 5**: Testing and Refinement
-- **Phase 6**: Final Integration
+- **Repository**: https://github.com/sfc-gh-sweingartner/SuperannuationTranscripts
+- **Snowflake Account**: demo_sweingartner
+- **Demo Environment**: Local + Snowflake hosted
 
-## 🆘 Troubleshooting
+## 📝 Notes
 
-### Connection Issues
-- Verify Snowflake credentials
-- Check network connectivity
-- Ensure warehouse is running
-- Validate database permissions
+This is a **demonstration solution** designed to showcase Snowflake's AI/ML capabilities in a financial services context. The implementation uses a mix of real infrastructure and simulated components to provide a compelling demo experience while maintaining realistic technical architecture.
 
-### Data Loading Issues
-- Check file format and encoding
-- Verify stage permissions
-- Validate JSON structure
-- Check for file size limits
-
-### Test Failures
-- Review connection configuration
-- Check database object permissions
-- Verify data loading completed
-- Validate table structures
-
-## 📞 Support
-
-For issues or questions:
-1. Check the test suite output
-2. Review the connection helper logs
-3. Validate database permissions
-4. Consult Snowflake documentation
-
-## 🎯 Demo Success Tips
-
-1. **Test thoroughly** in both environments
-2. **Use preset scenarios** for reliable demos
-3. **Have backup plans** for technical issues
-4. **Practice timing** for each demo section
-5. **Focus on business value** over technical details
+For production deployment, additional development would be required to integrate with actual Snowflake Cortex AI and ML services, implement real-time streaming, and add enterprise-grade security and compliance features.
 
 ---
 
-*This is a demo application for Snowflake sales purposes. Not intended for production use.* 
+*Testing Phase Complete - Solution Ready for Demo* 
